@@ -202,11 +202,15 @@ body {
 .card__inner {
   display: flex; }
 
-.card__col {
+.card__col_puzzle {
   margin-right: 20px; }
-  .card__col:last-child {
-    margin-right: 0;
-    width: 100%; }
+  @media screen and (max-width: 991px) {
+    .card__col_puzzle {
+      display: none; } }
+
+.card__col_settings {
+  margin-right: 0;
+  width: 100%; }
 
 .puzzle {
   width: 350px;
