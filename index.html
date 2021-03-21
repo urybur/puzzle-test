@@ -13,6 +13,105 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="card">asdasdas</div>
+    <div class="card">
+      <nav class="card__menu">
+        <a class="menu__item menu__item--active" href="#">Основное</a>
+        <a class="menu__item" href="#">Информация о награде</a>
+        <a class="menu__item" href="#">Условия получения</a>
+        <a class="menu__item" href="#">Поощерения</a>
+        <a class="menu__item" href="#">Стилизация</a>
+        <a class="menu__item" href="#">Технические настройки</a>
+      </nav>
+      <div class="card__inner">
+        <div class="card__col">
+          <div class="puzzle">
+            <div class="puzzle__item puzzle__item--yellow"></div>
+            <div class="puzzle__item puzzle__item--pink">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--blue">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--orange">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--green">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--pink">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--blue">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--orange">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+            <div class="puzzle__item puzzle__item--green">
+              <img class="puzzle__item_img" src="/img/icons/puzzle.svg" alt="элемент пазла" />
+            </div>
+          </div>
+        </div>
+        <div class="card__col">
+          <button class="select__puzzle">
+            <span class="select__puzzle_title">Пазл</span>
+            <span class="select__icon"></span>
+          </button>
+          <div class="puzzle__name_inner">
+            <div class="puzzle__name_title">Название</div>
+            <div class="puzzle__name">
+              <div class="puzzle__lang">Ru</div>
+              <input class="puzzle__name_input" type="text" name="input-name" placeholder="Имя" autocomplete="on" />
+            </div>
+            <div class="puzzle__name">
+              <div class="puzzle__lang">En</div>
+              <input class="puzzle__name_input" type="text" name="input-name" placeholder="Name" autocomplete="on" />
+            </div>
+          </div>
+          <div class="puzzle__img_title">Картинка пазла</div>
+          <div class="puzzle__img_inner">
+            <button class="puzzle__img"></button>
+            <div class="puzzle__img_load">
+              <button class="puzzle__img_load_btn">Загрузить</button>
+              <div class="puzzle__img_load_gallery">
+                или <a class="puzzle__img_load_gallery_link" href="#">Выбрать из коллекции</a>
+              </div>
+              <div class="puzzle__img_load_link_note">разрешение 550*550</div>
+            </div>
+          </div>
+          <div class="puzzle__volume_title">Сколько деталей у пазла</div>
+          <div class="puzzle__volume">
+            <button class="puzzle__volume_btn">по Горизонтали 3</button>
+            <button class="puzzle__volume_btn">по Вертикали 3</button>
+          </div>
+          <div class="puzzle__coupons">
+            <div class="puzzle__coupons_title">Может ли награда выдавать купоны</div>
+            <button class="select__coupons">
+              <span class="select__coupons_title">Да</span>
+              <span class="select__icon"></span>
+            </button>
+          </div>
+          <div class="puzzle__reward">
+            <div class="puzzle__reward_title">Сообщение при получении награды</div>
+            <input class="puzzle__input_reward" type="text" name="input-reward" placeholder="Введите значение" />
+          </div>
+          <div class="puzzle__num_reward">
+            <div class="puzzle__num_reward_title"></div>
+            <button class="puzzle__num_reward_btn">
+              <span>1</span>
+              <span>Раз</span>
+            </button>
+            <button class="puzzle__timeout_btn">
+              <span class="puzzle__timeout_btn--num">Таймаут: 1800</span>
+              <span class="puzzle__timeout_btn--days"
+                >Дней
+
+                <span class="select__icon"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

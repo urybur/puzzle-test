@@ -180,7 +180,280 @@ body {
 .card {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 20px 40px;
   border-radius: 5px;
   background-color: #fff; }
+
+.card__menu {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e6ecf566; }
+
+.menu__item {
+  padding: 10px;
+  margin-right: 10px;
+  color: #888ea7; }
+  .menu__item:last-child {
+    margin-right: 0; }
+  .menu__item--active {
+    font-weight: 400;
+    border-bottom: 2px solid #22a4dc; }
+
+.card__inner {
+  display: flex; }
+
+.card__col {
+  margin-right: 20px; }
+  .card__col:last-child {
+    margin-right: 0;
+    width: 100%; }
+
+.puzzle {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  cursor: pointer; }
+
+.puzzle__item {
+  width: 33%;
+  height: 33%;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff; }
+  .puzzle__item--yellow {
+    background-color: #f0f8cc; }
+  .puzzle__item--pink {
+    background-color: #e63782; }
+  .puzzle__item--blue {
+    background-color: #22a4dc; }
+  .puzzle__item--orange {
+    background-color: #f7ab29; }
+  .puzzle__item--green {
+    background-color: #aac72e; }
+  .puzzle__item:nth-child(1) {
+    border-top-left-radius: 20px; }
+  .puzzle__item:nth-child(3) {
+    border-top-right-radius: 20px; }
+  .puzzle__item:nth-child(7) {
+    border-bottom-left-radius: 20px; }
+  .puzzle__item:nth-child(9) {
+    border-bottom-right-radius: 20px; }
+
+.puzzle__item_img {
+  width: 35px;
+  height: 35px; }
+
+.select__puzzle {
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6ecf5;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.select__puzzle_title {
+  color: #313643;
+  opacity: 0.6; }
+
+.select__icon {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url(/img/icons/down-arrow.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.puzzle__name_inner {
+  margin-bottom: 10px; }
+
+.puzzle__name_title {
+  margin-bottom: 10px;
+  color: #313643; }
+
+.puzzle__name {
+  margin-bottom: 10px;
+  display: flex; }
+  .puzzle__name:last-child {
+    margin-bottom: 0; }
+
+.puzzle__lang {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: #e6ecf5;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.puzzle__name_input {
+  width: 100%;
+  min-height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #e6ecf5;
+  color: #888ea7; }
+
+.puzzle__img_inner {
+  margin-bottom: 10px;
+  display: flex; }
+
+.puzzle__img_title {
+  margin-bottom: 10px;
+  color: #313643; }
+
+.puzzle__img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: #e6ecf5;
+  background-image: url(/img/icons/image.svg);
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.puzzle__img_load_btn {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border: 2px solid #e6ecf5;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.puzzle__img_load_gallery {
+  margin-bottom: 5px;
+  color: #888ea7;
+  opacity: 0.6; }
+
+.puzzle__img_load_gallery_link {
+  font-style: italic;
+  text-decoration: underline;
+  color: #22a4dc; }
+
+.puzzle__img_load_link_note {
+  color: #888ea7;
+  opacity: 0.6; }
+
+.puzzle__volume {
+  margin-bottom: 10px;
+  display: flex; }
+
+.puzzle__volume_title {
+  margin-bottom: 10px;
+  color: #313643; }
+
+.puzzle__volume_btn {
+  width: 50%;
+  min-height: 40px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: left;
+  color: #313643;
+  opacity: 0.6;
+  background-color: #e6ecf5;
+  cursor: pointer; }
+  .puzzle__volume_btn:last-child {
+    border-right: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+.puzzle__coupons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.puzzle__coupons_title {
+  width: 25%;
+  color: #313643;
+  line-height: 1.5; }
+
+.select__coupons {
+  width: 75%;
+  min-height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e6ecf5;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.select__coupons_title {
+  color: #313643; }
+
+.puzzle__reward {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.puzzle__reward_title {
+  width: 25%;
+  color: #313643;
+  line-height: 1.5; }
+
+.puzzle__input_reward {
+  width: 75%;
+  min-height: 40px;
+  padding: 10px 0 10px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #e6ecf5;
+  color: #888ea7; }
+
+.puzzle__num_reward_btn {
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6ecf5;
+  border-radius: 5px;
+  color: #313643;
+  opacity: 0.6;
+  cursor: pointer; }
+
+.puzzle__timeout_btn {
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6ecf5;
+  border-radius: 5px;
+  color: #313643;
+  opacity: 0.6;
+  cursor: pointer; }
+
+.puzzle__timeout_btn--num {
+  width: 80%;
+  padding: 10px;
+  text-align-last: left;
+  border-right: 1px solid #fff; }
+
+.puzzle__timeout_btn--days {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
